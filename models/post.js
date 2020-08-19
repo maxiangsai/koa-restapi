@@ -17,7 +17,10 @@ const PostSchema = new Schema({
 
   description: String,
 
-  cover: String,
+  cover: {
+    type: String,
+    default: 'http://img.ydman.cn/img_1.jpg'
+  },
 
   categories: {
     type: Schema.Types.ObjectId,

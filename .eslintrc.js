@@ -9,5 +9,8 @@ module.exports = {
   extends: 'airbnb-base/legacy',
   parserOptions: {
     ecmaVersion: 2018
+  },
+  rules: {
+    'max-classes-per-file': ['error', 2]
   }
 };

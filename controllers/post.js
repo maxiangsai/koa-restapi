@@ -1,6 +1,8 @@
 'use strict';
 
 const Post = require('../models/post');
+const APIError = require('../utils/APIError');
+const httpStatus = require('http-status');
 
 /**
  * 创建文章
@@ -73,8 +75,12 @@ exports.getList = async (ctx) => {
  * @param {*} next
  */
 exports.remove = async (ctx) => {
+  const { body } = ctx.request;
+  if (!body.id) {
+    ctx.status = 400;
+    ctx.throw(new APIError(httpStatus.BAD_REQUEST, 'id不能为空'));
+  }
   try {
-    const { body } = ctx.request;
     await Post.findByIdAndRemove(body.id);
     ctx.body = {
       code: 1,
