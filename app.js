@@ -12,12 +12,15 @@ const etag = require('koa-etag');
 const cors = require('@koa/cors');
 const jwt = require('koa-jwt');
 const initDB = require('./db');
+const { accessLogger, errorLogger } = require('./logger');
 
 const users = require('./routes/users');
 const posts = require('./routes/posts');
 const categories = require('./routes/categories');
 
 initDB();
+
+app.use(accessLogger());
 
 // error handler
 onerror(app);
@@ -55,8 +58,6 @@ app.use(bodyparser({
 app.use(json());
 // 开发日志
 app.use(logger());
-
-// 自定义logger
 app.use(async (ctx, next) => {
   const start = new Date();
   await next();
@@ -73,6 +74,7 @@ app.use(categories.middleware());
 app.on('error', (err, ctx) => {
   console.warn('-----------------');
   console.error(err.status, err, ctx);
+  errorLogger.error(err);
 });
 
 module.exports = app;
