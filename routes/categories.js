@@ -1,6 +1,8 @@
 'use strict';
 
-const router = require('koa-router')();
+const Router = require('koa-joi-router');
+const Joi = Router.Joi;
+const router = Router();
 const CategoryCtrl = require('../controllers/category');
 
 router.prefix('/categories');

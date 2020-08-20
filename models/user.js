@@ -55,7 +55,7 @@ UserSchema.statics = {
           return Promise.resolve();
         }
         const err = new APIError(httpStatus.BAD_REQUEST, '用户名或者密码错误!', true);
-        return err;
+        return Promise.reject(err);
       });
   }
 };

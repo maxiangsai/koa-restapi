@@ -11,10 +11,8 @@ const conditional = require('koa-conditional-get');
 const etag = require('koa-etag');
 const cors = require('@koa/cors');
 const jwt = require('koa-jwt');
-const tokenVerify = require('./middlewares/verifyToken');
 const initDB = require('./db');
 
-const index = require('./routes/index');
 const users = require('./routes/users');
 const posts = require('./routes/posts');
 const categories = require('./routes/categories');
@@ -42,7 +40,6 @@ app.use(async function (ctx, next) {
     }
   });
 });
-// app.use(tokenVerify);
 app.use(jwt({
   secret: process.env.SECRET
 }).unless({
@@ -68,10 +65,9 @@ app.use(async (ctx, next) => {
 });
 
 // routes
-app.use(index.routes(), index.allowedMethods());
-app.use(users.routes(), users.allowedMethods());
-app.use(posts.routes(), posts.allowedMethods());
-app.use(categories.routes(), categories.allowedMethods());
+app.use(users.middleware());
+app.use(posts.middleware());
+app.use(categories.middleware());
 
 // error-handling
 app.on('error', (err, ctx) => {

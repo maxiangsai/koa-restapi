@@ -2,13 +2,24 @@
 
 const User = require('../models/user');
 const httpStatus = require('http-status');
-const { sign } = require('jsonwebtoken');
+const { sign } = require('../utils/token');
 
 exports.get = async ctx => {
   const {
-    username, password, access, avatar
+    username, access, avatar
   } = await User.get(ctx.params.id);
-  console.log(username, password);
+  ctx.body = {
+    code: 1,
+    data: { username, access, avatar }
+  };
+};
+
+exports.getList = async ctx => {
+  const list = await User.find({});
+  ctx.body = {
+    code: 1,
+    data: list
+  };
 };
 
 exports.create = async (ctx) => {
@@ -33,22 +44,18 @@ exports.create = async (ctx) => {
  */
 exports.login = async (ctx) => {
   const { body: { username, password } } = ctx.request;
-  console.log(ctx.request.body);
   const user = await User.findOne({ username });
-  console.log(user);
   if (!user) {
     ctx.throw(httpStatus.NOT_FOUND, '用户不存在');
   }
 
-  User.decryptPwd(password, user.password)
-    .then(() => {
-      ctx.body = {
-        code: 1,
-        data: sign(user)
-      };
-    })
-    .catch(err => {
-      console.log('错误', err);
-      ctx.throw(err);
-    });
+  try {
+    await User.decryptPwd(password, user.password);
+  } catch (error) {
+    ctx.throw(error);
+  }
+  ctx.body = {
+    code: 1,
+    data: sign(user)
+  };
 };

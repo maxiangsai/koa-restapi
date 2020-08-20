@@ -1,19 +1,17 @@
 'use strict';
 
 const userCtrl = require('../controllers/user');
-const router = require('koa-router')();
+const Router = require('koa-joi-router');
+const Joi = Router.Joi;
+const router = Router();
 
 router.prefix('/users');
-/**
- * 获取用户信息
- */
+
 router.get('/:id', userCtrl.get);
-router.post('/', userCtrl.create);
+// router.get('/', userCtrl.getList);
 
-router.post('/login', userCtrl.login);
+router.post('/register', { validate: { type: 'form', body: { username: Joi.string().required(), password: Joi.string().required() } } }, userCtrl.create);
 
-router.get('/bar', async (ctx) => {
-  ctx.body = 'this is a users/bar response';
-});
+router.post('/login', { validate: { type: 'form', body: { username: Joi.string().required(), password: Joi.string().required() } } }, userCtrl.login);
 
 module.exports = router;
