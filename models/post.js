@@ -1,8 +1,6 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const APIError = require('../utils/APIError');
-const { NOT_FOUND } = require('http-status');
 
 const Schema = mongoose.Schema;
 
