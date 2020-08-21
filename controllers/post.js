@@ -1,23 +1,17 @@
 'use strict';
 
 const Post = require('../models/post');
-const APIError = require('../utils/APIError');
-const httpStatus = require('http-status');
 
 /**
  * 创建文章
  */
 exports.create = async (ctx) => {
-  try {
-    const post = new Post(ctx.request.body);
-    const data = await post.save();
-    ctx.body = {
-      code: 1,
-      data
-    };
-  } catch (error) {
-    ctx.throw(error);
-  }
+  const post = new Post(ctx.request.body);
+  const data = await post.save();
+  ctx.body = {
+    code: 1,
+    data
+  };
 };
 
 /**
@@ -25,26 +19,27 @@ exports.create = async (ctx) => {
  */
 exports.update = async (ctx) => {
   const { id, ...rest } = ctx.request.body;
-  try {
-    const data = await Post.findByIdAndUpdate(id, rest, { new: true });
-    ctx.body = {
-      code: 1,
-      data
-    };
-  } catch (error) {
-    ctx.throw(error);
-  }
+  const data = await Post.findByIdAndUpdate(id, rest, { new: true });
+  ctx.body = {
+    code: 1,
+    data
+  };
 };
 
 exports.get = async ctx => {
-  try {
-    const data = await Post.get(ctx.params.id);
+  const post = await Post.get(ctx.params.id);
+  if (post) {
     ctx.body = {
       code: 1,
-      data
+      data: post
     };
-  } catch (error) {
-    ctx.throw(error);
+  } else {
+    ctx.status = 404;
+    ctx.body = {
+      code: 0,
+      data: null,
+      message: '文章不存在'
+    };
   }
 };
 
@@ -53,20 +48,16 @@ exports.get = async ctx => {
  * @param {*} ctx
  * @param {*} next
  */
-exports.getList = async (ctx) => {
-  try {
-    const { page, pageSize, state } = ctx.query;
-    const { total, list } = await Post.list({ page, pageSize, state });
-    ctx.body = {
-      code: 1,
-      data: {
-        total,
-        list
-      }
-    };
-  } catch (error) {
-    ctx.throw(error);
-  }
+exports.getList = async ctx => {
+  const { page, pageSize, state } = ctx.query;
+  const { total, list } = await Post.list({ page, pageSize, state });
+  ctx.body = {
+    code: 1,
+    data: {
+      total,
+      list
+    }
+  };
 };
 
 /**
@@ -76,17 +67,9 @@ exports.getList = async (ctx) => {
  */
 exports.remove = async (ctx) => {
   const { body } = ctx.request;
-  if (!body.id) {
-    ctx.status = 400;
-    ctx.throw(new APIError(httpStatus.BAD_REQUEST, 'id不能为空'));
-  }
-  try {
-    await Post.findByIdAndRemove(body.id);
-    ctx.body = {
-      code: 1,
-      data: null
-    };
-  } catch (error) {
-    ctx.throw(error);
-  }
+  await Post.findByIdAndRemove(body.id);
+  ctx.body = {
+    code: 1,
+    data: null
+  };
 };

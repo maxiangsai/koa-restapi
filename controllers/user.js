@@ -1,17 +1,25 @@
 'use strict';
 
 const User = require('../models/user');
-const httpStatus = require('http-status');
 const { sign } = require('../utils/token');
 
 exports.get = async ctx => {
-  const {
-    username, access, avatar
-  } = await User.get(ctx.params.id);
-  ctx.body = {
-    code: 1,
-    data: { username, access, avatar }
-  };
+  const user = await User.get(ctx.params.id);
+
+  if (user) {
+    const { username, access, avatar } = user;
+    ctx.body = {
+      code: 1,
+      data: { username, access, avatar }
+    };
+  } else {
+    ctx.status = 404;
+    ctx.body = {
+      code: 0,
+      data: null,
+      message: '该用户不存在'
+    };
+  }
 };
 
 exports.getList = async ctx => {
@@ -24,19 +32,15 @@ exports.getList = async ctx => {
 
 exports.create = async (ctx) => {
   const { body: { username, password } } = ctx.request;
-  try {
-    const user = new User({
-      username,
-      password
-    });
-    const savedUser = await user.save();
-    ctx.body = {
-      code: 1,
-      data: savedUser
-    };
-  } catch (error) {
-    ctx.throw(error);
-  }
+  const user = new User({
+    username,
+    password
+  });
+  const savedUser = await user.save();
+  ctx.body = {
+    code: 1,
+    data: savedUser
+  };
 };
 
 /**
@@ -46,16 +50,26 @@ exports.login = async (ctx) => {
   const { body: { username, password } } = ctx.request;
   const user = await User.findOne({ username });
   if (!user) {
-    ctx.throw(httpStatus.NOT_FOUND, '用户不存在');
+    ctx.status = 404;
+    ctx.body = {
+      code: 0,
+      data: null,
+      message: '该用户未注册'
+    };
   }
 
   try {
     await User.decryptPwd(password, user.password);
+    ctx.body = {
+      code: 1,
+      data: sign(user)
+    };
   } catch (error) {
-    ctx.throw(error);
+    ctx.status = error.status;
+    ctx.body = {
+      code: 0,
+      data: null,
+      message: error.message
+    };
   }
-  ctx.body = {
-    code: 1,
-    data: sign(user)
-  };
 };

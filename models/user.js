@@ -34,12 +34,7 @@ UserSchema.statics = {
    */
   get(id) {
     return this.findById(id)
-      .exec()
-      .then(user => {
-        if (user) return user;
-        const err = new APIError(httpStatus.NOT_FOUND, '该用户不存在!', true);
-        throw err;
-      });
+      .exec();
   },
 
   /**
@@ -50,7 +45,6 @@ UserSchema.statics = {
   decryptPwd(inputPwd, userPwd) {
     return bcrypt.compare(inputPwd, userPwd)
       .then(isMatch => {
-        console.log('match', isMatch);
         if (isMatch) {
           return Promise.resolve();
         }
@@ -64,7 +58,7 @@ UserSchema.statics = {
  * 保存用户信息前进行密码加密
  */
 const saltRounds = 10;
-UserSchema.pre('save', function (next) {
+UserSchema.pre('save', function preSave(next) {
   const user = this;
   bcrypt.genSalt(saltRounds, async (error, salt) => {
     if (error) throw error;

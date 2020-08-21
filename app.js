@@ -5,7 +5,7 @@ const Koa = require('koa');
 const app = new Koa();
 const json = require('koa-json');
 const onerror = require('koa-onerror');
-const bodyparser = require('koa-bodyparser');
+const bodyParser = require('koa-bodyparser');
 const logger = require('koa-logger');
 const conditional = require('koa-conditional-get');
 const etag = require('koa-etag');
@@ -29,12 +29,13 @@ app.use(cors());
 app.use(conditional());
 app.use(etag());
 
-app.use(async function (ctx, next) {
+app.use(function handle401(ctx, next) {
   return next().catch((err) => {
     if (err.status === 401) {
       ctx.status = 401;
       ctx.body = {
-        error: err.originalError
+        code: 0,
+        message: err.originalError
           ? err.originalError.message
           : err.message
       };
@@ -51,8 +52,8 @@ app.use(jwt({
   path: [/^\/users\/login/]
 }));
 
-// middlewares
-app.use(bodyparser({
+// middleWares
+app.use(bodyParser({
   enableTypes: ['json', 'form', 'text']
 }));
 app.use(json());
@@ -71,7 +72,7 @@ app.use(posts.middleware());
 app.use(categories.middleware());
 
 // error-handling
-app.on('error', (err, ctx) => {
+app.on('error', (err) => {
   errorLogger.error(err);
 });
 

@@ -1,11 +1,11 @@
 {
-  "name": "helloKoa",
+  "name": "koa-restful-api",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "node bin/www",
     "dev": "./node_modules/.bin/nodemon bin/www",
-    "prd": "pm2 start bin/www",
+    "prd": "pm2 start cluster",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

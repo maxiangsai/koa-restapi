@@ -1,6 +1,8 @@
 'use strict';
 
 const mongoose = require('mongoose');
+const APIError = require('../utils/APIError');
+const { NOT_FOUND } = require('http-status');
 
 const Schema = mongoose.Schema;
 
@@ -36,16 +38,12 @@ const PostSchema = new Schema({
 });
 
 PostSchema.statics = {
-  async get(id) {
-    const post = await this.findById(id)
+  get(id) {
+    return this.findById(id)
       .populate({
         path: 'categories',
         select: 'id name'
-      });
-    if (post) {
-      return post;
-    }
-    throw new Error(404);
+      }).exec;
   },
 
   async list({

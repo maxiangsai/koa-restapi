@@ -7,7 +7,6 @@ const { SECRET } = process.env;
 
 // 验证token获取userId
 const tokenVerify = async (ctx, next) => {
-  console.log(ctx.state);
   const token = ctx.get('Authorization');
   if (!token) {
     const err = new APIError(httpStatus.BAD_REQUEST, 'token不能为空!', true);

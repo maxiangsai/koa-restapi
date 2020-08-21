@@ -11,16 +11,12 @@ router.prefix('/categories');
 router.get('/', CategoryCtrl.getList);
 
 // /** 新增文章 */
-router.post('/', CategoryCtrl.create);
+router.post('/', { validate: { type: 'form', body: { name: Joi.string().required() } } }, CategoryCtrl.create);
 
 // /** 更新文章 */
-// router.patch('/:id', async ctx => {
-//   ctx.body = {
-//     title: '更新文章'
-//   }
-// })
+router.patch('/:id', CategoryCtrl.update);
 
 // /** 删除文章 */
-// router.delete('/', async ctx => {})
+router.delete('/:id', CategoryCtrl.remove);
 
 module.exports = router;
