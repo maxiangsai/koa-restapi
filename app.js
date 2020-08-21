@@ -72,9 +72,13 @@ app.use(categories.middleware());
 
 // error-handling
 app.on('error', (err, ctx) => {
-  console.warn('-----------------');
-  console.error(err.status, err, ctx);
   errorLogger.error(err);
 });
+
+if (!module.parent) {
+  app.listen(process.env.PORT, () => {
+    console.log(`Server start at ${app.address().port}`);
+  });
+}
 
 module.exports = app;
