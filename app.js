@@ -1,33 +1,28 @@
 'use strict';
 
-require('dotenv').config();
+require('dotenv-flow').config({ path: './.env' });
 const Koa = require('koa');
 const app = new Koa();
-const json = require('koa-json');
-const onerror = require('koa-onerror');
 const bodyParser = require('koa-bodyparser');
 const logger = require('koa-logger');
 const conditional = require('koa-conditional-get');
-const etag = require('koa-etag');
+const eTag = require('koa-etag');
 const cors = require('@koa/cors');
-const jwt = require('koa-jwt');
-const initDB = require('./db');
+const jwt = require('./middlewares/jwt');
+const db = require('./middlewares/database');
 const { accessLogger, errorLogger } = require('./logger');
+const config = require('./config');
+const routes = require('./routes');
 
-const users = require('./routes/users');
-const posts = require('./routes/posts');
-const categories = require('./routes/categories');
+if (!config.IS_TEST) {
+  app.use(logger());
+}
 
-initDB();
-
+app.use(db());
 app.use(accessLogger());
-
-// error handler
-onerror(app);
-
-app.use(cors());
+app.use(cors(config.CORS));
 app.use(conditional());
-app.use(etag());
+app.use(eTag());
 
 app.use(function handle401(ctx, next) {
   return next().catch((err) => {
@@ -44,32 +39,11 @@ app.use(function handle401(ctx, next) {
     }
   });
 });
-app.use(jwt({
-  secret: process.env.SECRET
-}).unless({
-  method: 'GET',
-  allowedMethods: ['GET', 'POST', 'PATCH', 'DELETE'],
-  path: [/^\/users\/login/]
-}));
-
+app.use(jwt);
 // middleWares
-app.use(bodyParser({
-  enableTypes: ['json', 'form', 'text']
-}));
-app.use(json());
-// 开发日志
-app.use(logger());
-app.use(async (ctx, next) => {
-  const start = new Date();
-  await next();
-  const ms = new Date() - start;
-  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
-});
-
+app.use(bodyParser());
 // routes
-app.use(users.middleware());
-app.use(posts.middleware());
-app.use(categories.middleware());
+routes(app);
 
 // error-handling
 app.on('error', (err) => {
@@ -77,8 +51,8 @@ app.on('error', (err) => {
 });
 
 if (!module.parent) {
-  app.listen(process.env.PORT, () => {
-    console.log(`Server start at ${app.address().port}`);
+  app.listen(config.PORT, () => {
+    console.log(`Server start at ${config.PORT}`);
   });
 }
 
