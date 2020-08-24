@@ -3,6 +3,7 @@
 require('dotenv-flow').config({ path: './.env' });
 const Koa = require('koa');
 const app = new Koa();
+const debug = require('debug')('app:server');
 const bodyParser = require('koa-bodyparser');
 const logger = require('koa-logger');
 const conditional = require('koa-conditional-get');
@@ -52,7 +53,7 @@ app.on('error', (err) => {
 
 if (!module.parent) {
   app.listen(config.PORT, () => {
-    console.log(`Server start at ${config.PORT}`);
+    debug(`Server start at ${config.PORT}`);
   });
 }
 

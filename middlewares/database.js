@@ -8,8 +8,8 @@ module.exports = () => {
   if (NODE_ENV !== 'test') {
     mongoose
       .connect(DB.uri, DB.options)
-      .then(conn => {
-        debug(`MongoDB connected on ${NODE_ENV} mode, at ${conn.uri}`);
+      .then(() => {
+        debug(`MongoDB connected on ${NODE_ENV} mode, at ${DB.uri}`);
       })
       .catch(err => {
         console.error(err);
