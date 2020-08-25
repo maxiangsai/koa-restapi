@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app",
-    "dev": "./node_modules/.bin/nodemon app",
+    "dev": "./node_modules/.bin/nodemon src/app.js",
     "prd": "pm2 start cluster",
     "test": "cross-env NODE_ENV=test jest",
     "test:watch": "jest --watch",

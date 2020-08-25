@@ -4,9 +4,10 @@ module.exports = {
   root: true,
   env: {
     node: true,
-    es6: true
+    es6: true,
+    jest: true
   },
-  extends: 'airbnb-base/legacy',
+  extends: ['airbnb-base/legacy'],
   parserOptions: {
     ecmaVersion: 2018
   },

@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 const { MongoMemoryServer } = require('mongodb-memory-server');
-const { DB } = require('../config');
+const { DB } = require('../src/config');
 
 let mongoServer;
 

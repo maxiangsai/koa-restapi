@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const { NODE_ENV, DB } = require('../config');
 
 module.exports = () => {
+  console.log(DB);
   if (NODE_ENV !== 'test') {
     mongoose
       .connect(DB.uri, DB.options)
