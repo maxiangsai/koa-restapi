@@ -5,7 +5,6 @@ const { sign } = require('../utils/token');
 
 exports.get = async ctx => {
   const user = await User.get(ctx.params.id);
-
   if (user) {
     const { username, access, avatar } = user;
     ctx.body = {
@@ -36,10 +35,11 @@ exports.create = async (ctx) => {
     username,
     password
   });
-  const savedUser = await user.save();
+  await user.save();
+
   ctx.body = {
     code: 1,
-    data: savedUser
+    data: user
   };
 };
 
@@ -56,6 +56,7 @@ exports.login = async (ctx) => {
       data: null,
       message: '该用户未注册'
     };
+    return;
   }
 
   try {

@@ -8,5 +8,5 @@ module.exports = jwt({
 }).unless({
   method: 'GET',
   allowedMethods: ['GET', 'POST', 'PATCH', 'DELETE'],
-  path: [/^\/users\/login/]
+  path: [/^\/users\/login/, /^\/users\/register/]
 });

@@ -1,14 +1,12 @@
 'use strict';
 
 const jwt = require('jsonwebtoken');
-const { JWT: { secret, expiresIn } } = require('../config');
+const { JWT: { secret, options } } = require('../config');
 
 exports.sign = (user) => {
   const token = jwt.sign({
     username: user.username,
     userId: user.id
-  }, secret, {
-    expiresIn
-  });
+  }, secret, options);
   return token;
 };

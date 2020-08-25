@@ -6,7 +6,7 @@ const { DB } = require('../config');
 
 let mongoServer;
 
-before(async () => {
+beforeAll(async () => {
   try {
     mongoServer = new MongoMemoryServer();
     const mongoUri = await mongoServer.getUri();
@@ -17,7 +17,7 @@ before(async () => {
   }
 });
 
-after(async ()=> {
+afterAll(async ()=> {
   await mongoose.disconnect();
   await mongoServer.stop();
 });

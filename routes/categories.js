@@ -11,7 +11,7 @@ router.prefix('/categories');
 router.get('/', CategoryCtrl.getList);
 
 // /** 新增文章 */
-router.post('/', { validate: { type: 'form', body: { name: Joi.string().required() } } }, CategoryCtrl.create);
+router.post('/', { validate: { continueOnError: true, type: 'form', body: { name: Joi.string().required() } } }, CategoryCtrl.create);
 
 // /** 更新文章 */
 router.patch('/:id', CategoryCtrl.update);

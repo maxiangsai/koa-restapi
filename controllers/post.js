@@ -27,7 +27,6 @@ exports.update = async (ctx) => {
 };
 
 exports.get = async ctx => {
-  console.log('公积金');
   const post = await Post.get(ctx.params.id);
   if (post) {
     ctx.body = {

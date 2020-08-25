@@ -4,7 +4,7 @@ const {
   NODE_ENV = 'development',
   PORT = 3000,
   MONGODB_URI,
-  JWT_SECRET,
+  JWT_SECRET = 'sc3l9o4',
   JWT_EXPIRES_IN = '7d'
 } = process.env;
 

@@ -41,7 +41,7 @@ PostSchema.statics = {
       .populate({
         path: 'categories',
         select: 'id name'
-      }).exec;
+      }).catch(() => {});
   },
 
   async list({
@@ -58,7 +58,7 @@ PostSchema.statics = {
     })
       .sort({ _id: -1 });
 
-    const [total, list] = await Promise.all([this.count({}), searchFn]);
+    const [total, list] = await Promise.all([this.countDocuments({}), searchFn]);
     return Promise.resolve({ total, list });
   }
 };

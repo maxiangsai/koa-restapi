@@ -34,7 +34,7 @@ UserSchema.statics = {
    */
   get(id) {
     return this.findById(id)
-      .exec();
+      .catch(() => {});
   },
 
   /**
