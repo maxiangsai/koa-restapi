@@ -32,7 +32,8 @@ const PostSchema = new Schema({
     default: 0
   }
 }, {
-  timestamps: true
+  timestamps: true,
+  versionKey: false
 });
 
 PostSchema.statics = {
@@ -44,22 +45,20 @@ PostSchema.statics = {
       }).catch(() => {});
   },
 
-  async list({
-    page = 1,
-    pageSize = 10,
-    state = 1
-  } = {}) {
+  async list(options = {}, filter = {}) {
+    const { state = 1 } = options;
+
+    const pageSize = parseInt(options.pageSize, 10) || 10;
+    const page = parseInt(options.page, 10) || 1;
     const skipCount = (page - 1) * pageSize;
-    const searchFn = this.find({
-      state
-    }).skip(skipCount).limit(Number(pageSize)).populate({
-      path: 'categories',
-      select: 'id name'
-    })
+
+    const countPromise = this.countDocuments(filter).exec();
+    const docsPromise = this.find({ state }).skip(skipCount).limit(Number(pageSize)).populate({ path: 'categories', select: 'id name' })
       .sort({ _id: -1 });
 
-    const [total, list] = await Promise.all([this.countDocuments({}), searchFn]);
-    return Promise.resolve({ total, list });
+    const [total, list] = await Promise.all([countPromise, docsPromise]);
+    const totalPage = Math.ceil(total / pageSize);
+    return Promise.resolve({ total, totalPage, list });
   }
 };
 

@@ -1,7 +1,7 @@
 'use strict';
 
 require('../helper');
-const app = require('../../app');
+const app = require('../../src/app');
 const request = require('supertest').agent(app.callback());
 
 describe('Posts Routes', () => {

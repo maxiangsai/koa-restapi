@@ -10,7 +10,8 @@ const CategorySchema = new Schema({
     required: true
   }
 }, {
-  timestamps: true
+  timestamps: true,
+  versionKey: false
 });
 
 CategorySchema.statics = {

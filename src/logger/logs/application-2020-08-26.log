@@ -1,0 +1,900 @@
+[2020-08-26T17:11:43.254] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:11:43.266] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:13:05.261] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:13:05.273] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:13:11.787] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:13:11.800] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:16:10.479] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:16:10.490] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:16:50.083] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:16:50.095] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:17:37.901] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:17:37.911] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:19:02.847] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:19:02.857] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:20:13.233] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:20:13.246] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:22:06.819] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:22:06.831] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:29:04.334] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:29:45.858] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:30:52.394] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:31:05.750] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:31:13.172] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:31:33.154] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:31:54.411] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:32:43.301] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:32:50.480] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:35:13.638] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:35:44.363] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:38:29.749] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:40:01.261] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:40:29.902] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:43:23.389] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:43:29.974] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:44:03.898] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:44:12.458] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:44:30.496] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:45:31.529] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:46:56.361] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:47:18.703] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:47:25.090] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:47:58.328] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:49:18.759] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:51:04.629] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:51:12.363] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:51:19.949] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:52:17.739] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T17:59:32.186] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:00:00.845] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:00:21.221] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:00:26.563] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:00:38.149] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:01:19.179] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:01:48.073] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:02:14.420] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:03:13.534] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:03:20.690] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:03:29.503] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:04:25.443] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:04:33.667] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:04:53.835] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:09:02.907] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:09:29.203] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:09:46.248] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:10:26.005] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:10:35.672] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:14:40.835] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:15:03.159] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:15:31.947] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:15:52.407] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:17:51.710] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:18:42.429] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:18:50.523] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:18:59.431] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:19:34.503] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:20:10.873] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:20:17.297] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:20:38.527] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:20:46.807] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:21:01.032] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:21:33.331] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:21:41.679] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:21:55.123] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:22:10.152] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:23:21.921] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:24:19.360] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:25:20.974] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:26:28.203] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:26:35.167] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7
+[2020-08-26T18:27:18.807] [ERROR] application - Error: next() called multiple times
+    at dispatch (D:\myProject\helloKoa\node_modules\koa-compose\index.js:38:45)
+    at next (D:\myProject\helloKoa\node_modules\koa-compose\index.js:45:18)
+    at errorHandler (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:285:22)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at specExposer (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:452:5)
+    at prepareRequest (D:\myProject\helloKoa\node_modules\koa-joi-router\joi-router.js:464:3)
+    at bodyParser (D:\myProject\helloKoa\node_modules\koa-bodyparser\index.js:95:5)
+    at cors (D:\myProject\helloKoa\node_modules\@koa\cors\index.js:56:32)
+    at D:\myProject\helloKoa\node_modules\koa-log4\koa-logger.js:86:7

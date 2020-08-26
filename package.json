@@ -7,7 +7,7 @@
     "dev": "./node_modules/.bin/nodemon src/app.js",
     "prd": "pm2 start cluster",
     "test": "cross-env NODE_ENV=test jest",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
@@ -20,7 +20,6 @@
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-conditional-get": "^2.0.0",
-    "koa-convert": "^1.2.0",
     "koa-etag": "^3.0.0",
     "koa-joi-router": "^6.0.2",
     "koa-jwt": "^4.0.0",

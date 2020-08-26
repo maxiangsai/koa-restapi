@@ -13,7 +13,15 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: true
+    trim: true,
+    required: true,
+    validate(value) {
+      console.log(value);
+      if (!value.match(/[a-zA-Z0-9]/)) {
+        throw new Error('Password必须为字母');
+      }
+    },
+    private: true
   },
   avatar: {
     type: String,
@@ -24,7 +32,8 @@ const UserSchema = new mongoose.Schema({
     default: 'admin'
   }
 }, {
-  timestamps: true
+  timestamps: true,
+  versionKey: false
 });
 
 UserSchema.statics = {
@@ -40,10 +49,9 @@ UserSchema.statics = {
   /**
    * 解密
    * @param {*} inputPwd
-   * @param {*} userPwd
    */
-  decryptPwd(inputPwd, userPwd) {
-    return bcrypt.compare(inputPwd, userPwd)
+  decryptPwd(inputPwd, password) {
+    return bcrypt.compare(inputPwd, password)
       .then(isMatch => {
         if (isMatch) {
           return Promise.resolve();
@@ -52,6 +60,11 @@ UserSchema.statics = {
         return Promise.reject(err);
       });
   }
+};
+
+UserSchema.methods.isPasswordMatch = async function (password) {
+  const user = this;
+  return bcrypt.compare(password, user.password);
 };
 
 /**
