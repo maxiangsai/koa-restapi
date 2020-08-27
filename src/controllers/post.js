@@ -1,6 +1,7 @@
 'use strict';
 
 const Post = require('../models/post');
+const httpStatus = require('http-status');
 
 /**
  * 创建文章
@@ -34,10 +35,9 @@ exports.get = async ctx => {
       data: post
     };
   } else {
-    ctx.status = 404;
+    ctx.status = httpStatus.NOT_FOUND;
     ctx.body = {
       code: 0,
-      data: null,
       message: '文章不存在'
     };
   }
@@ -49,14 +49,14 @@ exports.get = async ctx => {
  * @param {*} next
  */
 exports.getList = async ctx => {
-  const { page, pageSize, state } = ctx.query;
-  const { total, list } = await Post.list({ page, pageSize, state });
+  const { page, pageSize, state = 1 } = ctx.query;
+  const data = await Post.list(
+    { state },
+    { page, pageSize }
+  );
   ctx.body = {
     code: 1,
-    data: {
-      total,
-      list
-    }
+    data
   };
 };
 

@@ -13,6 +13,7 @@ module.exports = {
   },
   rules: {
     'max-classes-per-file': ['error', 2],
-    'max-len': ['error', 140]
+    'max-len': ['error', 140],
+    'no-underscore-dangle': 'off'
   }
 };

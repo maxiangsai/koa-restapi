@@ -1,14 +1,16 @@
 'use strict';
 
-const roles = {
+const rolesRightMap = {
   user: [],
   admin: ['getUsers', 'manageUsers']
 };
 
+let roles = [];
 const roleRights = new Map();
 
-Object.keys(roles).forEach(k => {
-  roleRights.set(k, roles[k]);
+Object.keys(rolesRightMap).forEach(k => {
+  roles.push(k);
+  roleRights.set(k, rolesRightMap[k]);
 });
 
 module.exports = {

@@ -1,77 +1,113 @@
 'use strict';
 
 require('../helper');
+const faker = require('faker');
 const app = require('../../src/app');
 const request = require('supertest').agent(app.callback());
-const User = require('../../src/models/user');
-const { userOne, insertUser } = require('../mock/user');
 
-let userId;
+const {
+  userOne, insertUser, userTwo
+} = require('../mock/user');
+const httpStatus = require('http-status');
+
 describe('User Routes', () => {
   describe('POST /users/register', () => {
+    let newUser;
     beforeEach(async () => {
+      newUser = {
+        username: faker.name.findName(),
+        password: 'password1',
+        role: 'user'
+      };
     });
+
     test('params is correct --> return 200', async () => {
-      const { status, body } = await request.post('/users/register').send(userOne).set('Content-Type', 'application/x-www-form-urlencoded');
-      console.log(body);
-      expect(status).toEqual(200);
-      expect(body.code).toEqual(1);
-      userId = body.data.id;
+      const { body } = await request.post('/users/register').send(newUser)
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .expect(httpStatus.OK);
+
+      expect(body).not.toHaveProperty('password');
+      expect(body).toEqual({
+        code: 1,
+        data: {
+          id: expect.anything(),
+          avatar: expect.any(String),
+          role: newUser.role,
+          username: newUser.username
+        }
+      });
     });
 
-    test('params is not correct --> return 400', async () => {
-      console.log(userId);
-      const { status, body } = await request.post('/users/register').send({ username: 'tt' })
-        .set('Content-Type', 'application/x-www-form-urlencoded');
+    test('password is missing --> return 400', async () => {
+      delete newUser.password;
+      const { body } = await request
+        .post('/users/register')
+        .send(newUser)
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .expect(httpStatus.BAD_REQUEST);
 
-      expect(status).toEqual(400);
       expect(body).toHaveProperty('message');
     });
   });
 
-  // describe('POST /posts/login', () => {
-  //   test('when params is correct --> return 200', async () => {
-  //     const params = {
-  //       username: 'tt',
-  //       password: '444'
-  //     };
-  //     const { status } = await request.post('/users/login').send(params).set('Content-Type', 'application/x-www-form-urlencoded');
-  //     expect(status).toEqual(200);
-  //   });
+  describe('POST /users/login', () => {
+    const { _id, role, ...rest } = userOne;
+    beforeAll(async () => {
+      await insertUser([userOne]);
+    });
 
-  //   test('when password is not correct --> return 400', async () => {
-  //     const params = {
-  //       username: 'tt',
-  //       password: '45544'
-  //     };
-  //     const { status, body } = await request.post('/users/login').send(params).set('Content-Type', 'application/x-www-form-urlencoded');
-  //     expect(status).toEqual(400);
-  //     expect(body).toHaveProperty('message');
-  //   });
+    test('when params is correct --> return 200', async () => {
+      const { body } = await request
+        .post('/users/login')
+        .send(rest)
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .expect(httpStatus.OK);
 
-  //   test('when username is not correct --> return 404', async () => {
-  //     const params = {
-  //       username: 'tt55',
-  //       password: '45544'
-  //     };
-  //     const { status, body } = await request.post('/users/login').send(params).set('Content-Type', 'application/x-www-form-urlencoded');
-  //     expect(status).toEqual(404);
-  //     expect(body).toHaveProperty('message');
-  //   });
-  // });
+      expect(body).toEqual({
+        code: 1,
+        data: expect.any(String)
+      });
+    });
 
-  // describe('GET /users/:id', () => {
-  //   test('correct --> return 200 and data', async () => {
-  //     const { status, body } = await request.get(`/users/${userId}`);
-  //     expect(status).toEqual(200);
-  //     expect(body.data).toHaveProperty('username');
-  //     expect(body.data).toHaveProperty('avatar');
-  //   });
+    test('when password is not correct --> return 400', async () => {
+      const { body } = await request
+        .post('/users/login')
+        .send({ ...rest, password: 'xxx' })
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .expect(httpStatus.BAD_REQUEST);
 
-  //   test('id is not exist --> return 404', async () => {
-  //     const { status, body } = await request.get('/users/5f3cf0c92a0a5e895886d51e');
-  //     expect(status).toEqual(404);
-  //     expect(body).toHaveProperty('message');
-  //   });
-  // });
+      expect(body).toHaveProperty('message');
+    });
+
+    test('when username is not correct --> return 404', async () => {
+      const { body } = await request
+        .post('/users/login')
+        .send({ ...rest, username: faker.name.findName() })
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .expect(httpStatus.NOT_FOUND);
+
+      expect(body).toHaveProperty('message');
+    });
+  });
+
+  describe('GET /users/:id', () => {
+    test('correct --> return 200 and data', async () => {
+      const { body } = await request.get(`/users/${userOne._id}`).expect(httpStatus.OK);
+
+      expect(body).toEqual({
+        code: 1,
+        data: {
+          id: userOne._id.toHexString(),
+          role: userOne.role,
+          avatar: expect.any(String),
+          username: userOne.username
+        }
+      });
+    });
+
+    test('id is not exist --> return 404', async () => {
+      const { body } = await request.get(`/users/${userTwo._id}`).expect(httpStatus.NOT_FOUND);
+      expect(body).toHaveProperty('message');
+    });
+  });
 });

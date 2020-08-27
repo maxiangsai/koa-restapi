@@ -4,6 +4,7 @@ const Router = require('koa-joi-router');
 const Joi = Router.Joi;
 const router = Router();
 const postCtrl = require('../controllers/post');
+const { joiError } = require('../middlewares');
 
 router.prefix('/posts');
 
@@ -14,10 +15,30 @@ router.get('/', { validate: { continueOnError: true, query: { page: Joi.number()
 router.get('/:id', postCtrl.get);
 
 /** 新增文章 */
-router.post('/', { validate: { continueOnError: true, type: 'form', body: { title: Joi.string().required(), content: Joi.string().required(), state: Joi.number() } } }, postCtrl.create);
+router.post('/', {
+  validate: {
+    continueOnError: true,
+    type: 'form',
+    body: {
+      title: Joi.string().required(),
+      content: Joi.string().required(),
+      state: Joi.number()
+    }
+  }
+}, joiError, postCtrl.create);
 
 /** 更新文章 */
-router.patch('/:id', { validate: { continueOnError: true, type: 'json', body: { title: Joi.string().required(), content: Joi.string().required(), state: Joi.number() } } }, postCtrl.update);
+router.patch('/:id', {
+  validate: {
+    continueOnError: true,
+    type: 'json',
+    body: {
+      title: Joi.string().required(),
+      content: Joi.string().required(),
+      state: Joi.number()
+    }
+  }
+}, postCtrl.update);
 
 /** 删除文章 */
 router.delete('/:id', postCtrl.remove);

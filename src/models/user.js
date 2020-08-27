@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const httpStatus = require('http-status');
 const APIError = require('../utils/APIError');
+const { roles } = require('../config/roles');
+const { toJSON } = require('./plugins');
 
 const UserSchema = new mongoose.Schema({
   username: {
@@ -16,9 +18,8 @@ const UserSchema = new mongoose.Schema({
     trim: true,
     required: true,
     validate(value) {
-      console.log(value);
       if (!value.match(/[a-zA-Z0-9]/)) {
-        throw new Error('Password必须为字母');
+        throw new Error('Password必须为字母或数字');
       }
     },
     private: true
@@ -27,9 +28,10 @@ const UserSchema = new mongoose.Schema({
     type: String,
     default: 'http://img.ydman.cn/avatar.jpg'
   },
-  access: {
+  role: {
     type: String,
-    default: 'admin'
+    enum: roles,
+    default: 'user'
   }
 }, {
   timestamps: true,
@@ -82,5 +84,7 @@ UserSchema.pre('save', function preSave(next) {
     });
   });
 });
+
+UserSchema.plugin(toJSON);
 
 module.exports = mongoose.model('User', UserSchema);

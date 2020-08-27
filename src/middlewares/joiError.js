@@ -2,10 +2,10 @@
 
 module.exports = async (ctx, next) => {
   if (ctx.invalid) {
-    ctx.status = ctx.invalid.body.status;
+    ctx.status = 400;
     ctx.body = {
       code: 0,
-      message: ctx.invalid.body.msg
+      message: ctx.invalid.type instanceof Error ? ctx.invalid.type.msg : ctx.invalid.body.msg
     };
   } else await next();
 };

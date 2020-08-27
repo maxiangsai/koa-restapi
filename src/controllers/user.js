@@ -5,12 +5,10 @@ const { sign } = require('../utils/token');
 
 exports.get = async ctx => {
   const user = await User.get(ctx.params.id);
-  console.log(user);
   if (user) {
-    const { username, access, avatar } = user;
     ctx.body = {
       code: 1,
-      data: { username, access, avatar }
+      data: user
     };
   } else {
     ctx.status = 404;
@@ -31,17 +29,13 @@ exports.getList = async ctx => {
 };
 
 exports.create = async (ctx) => {
-  const { body: { username, password } } = ctx.request;
-  console.log(password);
-  const user = new User({
-    username,
-    password
-  });
+  const { body } = ctx.request;
+  const user = new User(body);
   try {
-    await user.save();
+    const data = await user.save();
     ctx.body = {
       code: 1,
-      data: user
+      data
     };
   } catch (error) {
     console.error(error);
