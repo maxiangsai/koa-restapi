@@ -2,6 +2,7 @@
 
 const User = require('../models/user');
 const { sign } = require('../utils/token');
+const httpStatus = require('http-status');
 
 exports.get = async ctx => {
   const user = await User.get(ctx.params.id);
@@ -11,7 +12,7 @@ exports.get = async ctx => {
       data: user
     };
   } else {
-    ctx.status = 404;
+    ctx.status = httpStatus.NOT_FOUND;
     ctx.body = {
       code: 0,
       data: null,
@@ -49,7 +50,7 @@ exports.login = async (ctx) => {
   const { body: { username, password } } = ctx.request;
   const user = await User.findOne({ username });
   if (!user) {
-    ctx.status = 404;
+    ctx.status = httpStatus.NOT_FOUND;
     ctx.body = {
       code: 0,
       data: null,

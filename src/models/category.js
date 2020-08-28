@@ -18,8 +18,7 @@ const CategorySchema = new Schema({
 CategorySchema.statics = {
   isExist(body) {
     return this.findOne(body)
-      .catch((err) => {
-        console.log(err);
+      .catch(() => {
       });
   },
 

@@ -17,7 +17,7 @@ exports.create = async ctx => {
   const { body } = ctx.request;
 
   const isExist = await Category.isExist(body);
-  if (isExist) ctx.throw(400, '该分类已存在');
+  if (isExist) ctx.throw(httpStatus.BAD_REQUEST, '该分类已存在');
 
   const category = new Category(body);
   const data = await category.save();
