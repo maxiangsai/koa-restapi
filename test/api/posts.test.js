@@ -1,13 +1,14 @@
 'use strict';
 
-require('../helper');
 const app = require('../../src/app');
 const httpStatus = require('http-status');
 const faker = require('faker');
 const { userOneToken } = require('../mock/token');
-const { insertPost, postOne } = require('../mock/post');
-const Post = require('../../src/models/post');
+const { insertPost, postOne, postTwo } = require('../mock/post');
 const request = require('supertest').agent(app.callback());
+const setUpMongoDB = require('../setup');
+
+setUpMongoDB();
 
 describe('Posts Routes', () => {
   describe('POST /posts', () => {
@@ -50,9 +51,6 @@ describe('Posts Routes', () => {
   });
 
   describe('GET /posts', () => {
-    beforeAll(async () => {
-      await Post.deleteMany({});
-    });
     test('default option get list --> return 200', async () => {
       await insertPost([postOne]);
       const { body } = await request.get('/posts').expect(httpStatus.OK);
@@ -77,6 +75,7 @@ describe('Posts Routes', () => {
 
   describe('GET /posts/:id', () => {
     test('when id is exist --> return 200', async () => {
+      await insertPost([postOne]);
       const { body } = await request
         .get(`/posts/${postOne._id}`)
         .expect(httpStatus.OK);
@@ -102,6 +101,73 @@ describe('Posts Routes', () => {
       expect(body).toEqual({
         code: 0,
         message: expect.any(String)
+      });
+    });
+  });
+
+  describe('PATCH /posts/:id', () => {
+    test('when id and params is correct --> return 200', async () => {
+      await insertPost([postOne]);
+      const updateBody = { title: faker.lorem.words(), content: faker.lorem.paragraph() };
+      const { body } = await request
+        .patch(`/posts/${postOne._id}`)
+        .set('Authorization', `Bearer ${userOneToken}`)
+        .send(updateBody)
+        .expect(httpStatus.OK);
+
+      expect(body).toEqual({
+        code: 1,
+        data: {
+          id: postOne._id.toHexString(),
+          title: updateBody.title,
+          content: updateBody.content,
+          state: postOne.state,
+          cover: expect.any(String)
+        }
+      });
+    });
+
+    test('when id is correct but params is missing --> return 400', async () => {
+      const { body } = await request
+        .patch(`/posts/${postOne._id}`)
+        .set('Authorization', `Bearer ${userOneToken}`)
+        .send({ title: faker.lorem.words() })
+        .expect(httpStatus.BAD_REQUEST);
+
+      expect(body).toEqual({
+        code: 0,
+        message: expect.any(String)
+      });
+    });
+  });
+
+  describe('DELETE /posts/:id', () => {
+    test('when id is not exist --> return 404', async () => {
+      await insertPost([postOne]);
+      const { body } = await request
+        .delete(`/posts/${postTwo._id}`)
+        .set('Authorization', `Bearer ${userOneToken}`)
+        .expect(httpStatus.NOT_FOUND);
+      expect(body).toEqual({
+        code: 0,
+        message: expect.any(String)
+      });
+    });
+
+    test('when id is exist --> return 200', async () => {
+      await insertPost([postOne]);
+      const { body } = await request
+        .delete(`/posts/${postOne._id}`)
+        .set('Authorization', `Bearer ${userOneToken}`)
+        .expect(httpStatus.OK);
+
+      expect(body.code).toEqual(1);
+      expect(body.data).toEqual({
+        id: postOne._id.toHexString(),
+        title: postOne.title,
+        content: postOne.content,
+        cover: expect.any(String),
+        state: postOne.state
       });
     });
   });

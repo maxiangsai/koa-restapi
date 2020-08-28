@@ -1,0 +1,17 @@
+{
+    "env": {
+        "node": true,
+        "jest": true,
+        "es6": true
+    },
+    "extends": "airbnb-base/legacy",
+    "parserOptions": {
+        "ecmaVersion": 2020
+    },
+    "rules": {
+        "indent": ["warn", 2],
+        "max-classes-per-file": ["error", 2],
+        "max-len": ["error", 140],
+        "no-underscore-dangle":"off"
+    }
+}

@@ -19,12 +19,23 @@ exports.create = async (ctx) => {
  * 更新文章
  */
 exports.update = async (ctx) => {
-  const { id, ...rest } = ctx.request.body;
-  const data = await Post.findByIdAndUpdate(id, rest, { new: true });
-  ctx.body = {
-    code: 1,
-    data
-  };
+  const { body } = ctx.request;
+  const { id } = ctx.request.params;
+  const post = await Post.get(id);
+  if (post) {
+    Object.assign(post, body);
+    await post.save();
+    ctx.body = {
+      code: 1,
+      data: post
+    };
+  } else {
+    ctx.status = httpStatus.NOT_FOUND;
+    ctx.body = {
+      code: 0,
+      message: '文章不存在'
+    };
+  }
 };
 
 exports.get = async ctx => {
@@ -66,10 +77,19 @@ exports.getList = async ctx => {
  * @param {*} next
  */
 exports.remove = async (ctx) => {
-  const { body } = ctx.request;
-  await Post.findByIdAndRemove(body.id);
-  ctx.body = {
-    code: 1,
-    data: null
-  };
+  const { id } = ctx.params;
+  const post = await Post.get(id);
+  if (post) {
+    await post.remove();
+    ctx.body = {
+      code: 1,
+      data: post
+    };
+  } else {
+    ctx.status = httpStatus.NOT_FOUND;
+    ctx.body = {
+      code: 0,
+      message: '文章不存在'
+    };
+  }
 };

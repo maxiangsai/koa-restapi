@@ -51,8 +51,6 @@ PostSchema.statics = {
     const page = parseInt(options.page, 10) || 1;
     const skipCount = (page - 1) * pageSize;
 
-    console.log('fff', filter);
-
     const countPromise = this.countDocuments(filter).exec();
     const docsPromise = this.find(filter)
       .skip(skipCount)

@@ -38,9 +38,9 @@ router.patch('/:id', {
       state: Joi.number()
     }
   }
-}, postCtrl.update);
+}, joiError, postCtrl.update);
 
 /** 删除文章 */
-router.delete('/:id', postCtrl.remove);
+router.delete('/:id', joiError, postCtrl.remove);
 
 module.exports = router;

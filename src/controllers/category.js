@@ -1,12 +1,15 @@
 'use strict';
 
 const Category = require('../models/category');
+const httpStatus = require('http-status');
 
 exports.getList = async (ctx) => {
   const list = await Category.list();
   ctx.body = {
     code: 1,
-    data: list
+    data: {
+      list
+    }
   };
 };
 
@@ -25,19 +28,39 @@ exports.create = async ctx => {
 };
 
 exports.update = async (ctx) => {
-  const { id, ...rest } = ctx.request.body;
-  const data = await Category.findByIdAndUpdate(id, rest, { new: true });
-  ctx.body = {
-    code: 1,
-    data
-  };
+  const { id } = ctx.params;
+  const { body } = ctx.request;
+  const category = await Category.findById(id);
+  if (category) {
+    Object.assign(category, body);
+    await category.save();
+    ctx.body = {
+      code: 1,
+      data: category
+    };
+  } else {
+    ctx.status = httpStatus.NOT_FOUND;
+    ctx.body = {
+      code: 0,
+      message: '该分类不存在'
+    };
+  }
 };
 
 exports.remove = async ctx => {
-  const { body } = ctx.request;
-  await Category.findByIdAndRemove(body.id);
-  ctx.body = {
-    code: 1,
-    data: null
-  };
+  const { id } = ctx.params;
+  const category = await Category.findById(id);
+  if (category) {
+    await category.remove();
+    ctx.body = {
+      code: 1,
+      data: category
+    };
+  } else {
+    ctx.status = httpStatus.NOT_FOUND;
+    ctx.body = {
+      code: 0,
+      message: '该分类不存在'
+    };
+  }
 };

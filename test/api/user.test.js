@@ -1,14 +1,15 @@
 'use strict';
 
-require('../helper');
 const faker = require('faker');
 const app = require('../../src/app');
 const request = require('supertest').agent(app.callback());
-
 const {
   userOne, insertUser, userTwo
 } = require('../mock/user');
 const httpStatus = require('http-status');
+const setUpMongoDB = require('../setup');
+
+setUpMongoDB();
 
 describe('User Routes', () => {
   describe('POST /users/register', () => {
@@ -52,11 +53,9 @@ describe('User Routes', () => {
 
   describe('POST /users/login', () => {
     const { _id, role, ...rest } = userOne;
-    beforeAll(async () => {
-      await insertUser([userOne]);
-    });
 
     test('when params is correct --> return 200', async () => {
+      await insertUser([userOne]);
       const { body } = await request
         .post('/users/login')
         .send(rest)
@@ -70,6 +69,7 @@ describe('User Routes', () => {
     });
 
     test('when password is not correct --> return 400', async () => {
+      await insertUser([userOne]);
       const { body } = await request
         .post('/users/login')
         .send({ ...rest, password: 'xxx' })
@@ -92,6 +92,7 @@ describe('User Routes', () => {
 
   describe('GET /users/:id', () => {
     test('correct --> return 200 and data', async () => {
+      await insertUser([userOne]);
       const { body } = await request.get(`/users/${userOne._id}`).expect(httpStatus.OK);
 
       expect(body).toEqual({
