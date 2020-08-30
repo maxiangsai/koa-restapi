@@ -21,6 +21,13 @@ exports.get = async ctx => {
   }
 };
 
+exports.getUserInfo = async ctx => {
+  ctx.body = {
+    code: 1,
+    data: ctx.state.user
+  };
+};
+
 exports.getList = async ctx => {
   const list = await User.find({});
   ctx.body = {

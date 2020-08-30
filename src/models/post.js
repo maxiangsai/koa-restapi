@@ -16,7 +16,10 @@ const PostSchema = new Schema({
     required: true
   },
 
-  description: String,
+  description: {
+    type: String,
+    default: ''
+  },
 
   cover: {
     type: String,
