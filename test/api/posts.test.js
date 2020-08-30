@@ -7,6 +7,7 @@ const { userOneToken } = require('../mock/token');
 const { insertPost, postOne, postTwo } = require('../mock/post');
 const request = require('supertest').agent(app.callback());
 const setUpMongoDB = require('../setup');
+const { insertUser, userOne } = require('../mock/user');
 
 setUpMongoDB();
 
@@ -19,17 +20,23 @@ describe('Posts Routes', () => {
         content: faker.lorem.paragraph()
       };
     });
-    test('when not authenticated --> return 401', async () => {
-      const { status, body } = await request.post('/posts').send(newPost);
 
-      expect(status).toEqual(httpStatus.UNAUTHORIZED);
+    test('when token is not correct --> return 401', async () => {
+      const { body } = await request
+        .post('/posts')
+        .send(newPost)
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .set('Authorization', `Bearer ${userOneToken}`)
+        .expect(httpStatus.UNAUTHORIZED);
+
       expect(body).toEqual({
         code: 0,
         message: expect.any(String)
       });
     });
 
-    test('when authenticated --> return 200', async () => {
+    test('when token is correct --> return 200', async () => {
+      await insertUser([userOne]);
       const { body } = await request
         .post('/posts')
         .send(newPost)
@@ -40,11 +47,11 @@ describe('Posts Routes', () => {
       expect(body).toEqual({
         code: 1,
         data: {
-          id: expect.anything(),
-          title: newPost.title,
           content: newPost.content,
-          cover: expect.any(String),
-          state: 0
+          title: newPost.title,
+          state: expect.any(Number),
+          id: expect.any(String),
+          cover: expect.any(String)
         }
       });
     });
@@ -93,9 +100,8 @@ describe('Posts Routes', () => {
     });
 
     test('when id is not exist --> return 404', async () => {
-      const params = { id: 12 };
       const { body } = await request
-        .get(`/posts/${params.id}`)
+        .get(`/posts/${postTwo._id}`)
         .expect(httpStatus.NOT_FOUND);
 
       expect(body).toEqual({
@@ -108,6 +114,7 @@ describe('Posts Routes', () => {
   describe('PATCH /posts/:id', () => {
     test('when id and params is correct --> return 200', async () => {
       await insertPost([postOne]);
+      await insertUser([userOne]);
       const updateBody = { title: faker.lorem.words(), content: faker.lorem.paragraph() };
       const { body } = await request
         .patch(`/posts/${postOne._id}`)
@@ -128,10 +135,12 @@ describe('Posts Routes', () => {
     });
 
     test('when id is correct but params is missing --> return 400', async () => {
+      await insertPost([postOne]);
+      await insertUser([userOne]);
       const { body } = await request
         .patch(`/posts/${postOne._id}`)
         .set('Authorization', `Bearer ${userOneToken}`)
-        .send({ title: faker.lorem.words() })
+        .send()
         .expect(httpStatus.BAD_REQUEST);
 
       expect(body).toEqual({
@@ -144,6 +153,7 @@ describe('Posts Routes', () => {
   describe('DELETE /posts/:id', () => {
     test('when id is not exist --> return 404', async () => {
       await insertPost([postOne]);
+      await insertUser([userOne]);
       const { body } = await request
         .delete(`/posts/${postTwo._id}`)
         .set('Authorization', `Bearer ${userOneToken}`)
@@ -156,6 +166,7 @@ describe('Posts Routes', () => {
 
     test('when id is exist --> return 200', async () => {
       await insertPost([postOne]);
+      await insertUser([userOne]);
       const { body } = await request
         .delete(`/posts/${postOne._id}`)
         .set('Authorization', `Bearer ${userOneToken}`)

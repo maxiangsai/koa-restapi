@@ -1,10 +1,10 @@
 'use strict';
 
-const Router = require('koa-joi-router');
-const Joi = Router.Joi;
+const Router = require('koa-router');
 const router = Router();
 const CategoryCtrl = require('../controllers/category');
-const { joiError } = require('../middlewares');
+const categoryValidation = require('../validations/category');
+const { validate, auth } = require('../middlewares');
 
 router.prefix('/categories');
 
@@ -12,29 +12,12 @@ router.prefix('/categories');
 router.get('/', CategoryCtrl.getList);
 
 // /** 新增文章 */
-router.post('/', {
-  validate: {
-    continueOnError: true,
-    type: 'form',
-    body: { name: Joi.string().required() }
-  }
-}, joiError, CategoryCtrl.create);
+router.post('/', auth, validate(categoryValidation.createCategory), CategoryCtrl.create);
 
 // /** 更新文章 */
-router.patch('/:id', {
-  validate: {
-    continueOnError: true,
-    type: 'json',
-    body: { name: Joi.string().required() }
-  }
-}, joiError, CategoryCtrl.update);
+router.patch('/:id', auth, validate(categoryValidation.update), CategoryCtrl.update);
 
 // /** 删除文章 */
-router.delete('/:id', {
-  validate: {
-    continueOnError: true,
-    params: { id: Joi.string().required() }
-  }
-}, joiError, CategoryCtrl.remove);
+router.delete('/:id', auth, validate(categoryValidation.delete), CategoryCtrl.remove);
 
 module.exports = router;

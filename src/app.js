@@ -9,8 +9,11 @@ const logger = require('koa-logger');
 const conditional = require('koa-conditional-get');
 const eTag = require('koa-etag');
 const cors = require('@koa/cors');
-const jwt = require('./middlewares/jwt');
-const db = require('./middlewares/database');
+
+const passport = require('koa-passport');
+const { jwtStrategy } = require('./config/passport');
+
+const { db } = require('./middlewares');
 const { accessLogger, errorLogger } = require('./logger');
 const config = require('./config');
 const routes = require('./routes');
@@ -24,25 +27,10 @@ app.use(accessLogger());
 app.use(cors(config.CORS));
 app.use(conditional());
 app.use(eTag());
-
-app.use(function handle401(ctx, next) {
-  return next().catch((err) => {
-    if (err.status === 401) {
-      ctx.status = 401;
-      ctx.body = {
-        code: 0,
-        message: err.originalError
-          ? err.originalError.message
-          : err.message
-      };
-    } else {
-      throw err;
-    }
-  });
-});
-app.use(jwt);
-// middleWares
 app.use(bodyParser());
+
+app.use(passport.initialize());
+passport.use(jwtStrategy);
 // routes
 routes(app);
 

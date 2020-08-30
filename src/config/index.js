@@ -5,7 +5,9 @@ const {
   PORT = 3000,
   MONGODB_URI,
   JWT_SECRET = 'sc3l9o4',
-  JWT_EXPIRES_IN = '7d'
+  JWT_EXPIRES_IN = '7d',
+  QINIU_AK,
+  QINIU_SK
 } = process.env;
 
 module.exports = {
@@ -33,5 +35,10 @@ module.exports = {
 
   CORS: {
     origin: '*'
+  },
+
+  QINIU: {
+    ak: QINIU_AK,
+    sk: QINIU_SK
   }
 };

@@ -7,6 +7,7 @@ const httpStatus = require('http-status');
 const { userOneToken } = require('../mock/token');
 const faker = require('faker');
 const { insertCategory, categoryOne, categoryTwo } = require('../mock/category');
+const { insertUser, userOne } = require('../mock/user');
 
 setUpMongoDB();
 
@@ -35,6 +36,7 @@ describe('Category Routes', () =>{
   describe('POST /categories', () => {
     test('when params is correct --> return 200', async () =>{
       const newBody = { name: faker.lorem.word() };
+      await insertUser([userOne]);
       const { body } = await request
         .post('/categories')
         .set('Content-Type', 'application/x-www-form-urlencoded')
@@ -52,11 +54,11 @@ describe('Category Routes', () =>{
     });
 
     test('when params is missing --> return 400', async () =>{
+      await insertUser([userOne]);
       const { body } = await request
         .post('/categories')
         .set('Content-Type', 'application/x-www-form-urlencoded')
         .set('Authorization', `Bearer ${userOneToken}`)
-        .send()
         .expect(httpStatus.BAD_REQUEST);
 
       expect(body).toEqual({
@@ -65,13 +67,13 @@ describe('Category Routes', () =>{
       });
     });
 
-    test('when Authorization is missing --> return 400', async () =>{
+    test('when Authorization is missing --> return 401', async () =>{
       const newBody = { name: faker.lorem.word() };
       const { body } = await request
         .post('/categories')
         .set('Authorization', `Bearer ${userOneToken}`)
         .send(newBody)
-        .expect(httpStatus.BAD_REQUEST);
+        .expect(httpStatus.UNAUTHORIZED);
 
       expect(body).toEqual({
         code: 0,
@@ -83,6 +85,7 @@ describe('Category Routes', () =>{
   describe('PATCH /categories/:id', () => {
     test('when params is correct --> return 200', async () => {
       await insertCategory([categoryOne]);
+      await insertUser([userOne]);
       const updateBody = { name: faker.lorem.word() };
       const { body } = await request
         .patch(`/categories/${categoryOne._id}`)
@@ -101,6 +104,7 @@ describe('Category Routes', () =>{
 
     test('when id is not exist --> return 404', async () => {
       await insertCategory([categoryOne]);
+      await insertUser([userOne]);
       const updateBody = { name: faker.lorem.word() };
       const { body } = await request
         .patch(`/categories/${categoryTwo._id}`)
@@ -118,6 +122,7 @@ describe('Category Routes', () =>{
   describe('DELETE /categories/:id', () => {
     test('when id is exist --> return 200', async () => {
       await insertCategory([categoryOne]);
+      await insertUser([userOne]);
       const { body } = await request
         .delete(`/categories/${categoryOne._id}`)
         .set('Authorization', `Bearer ${userOneToken}`)
@@ -134,7 +139,7 @@ describe('Category Routes', () =>{
 
     test('when id is not exist --> return 404', async () => {
       await insertCategory([categoryOne]);
-
+      await insertUser([userOne]);
       const { body } = await request
         .delete(`/categories/${categoryTwo._id}`)
         .set('Authorization', `Bearer ${userOneToken}`)

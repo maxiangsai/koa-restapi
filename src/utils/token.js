@@ -5,8 +5,8 @@ const { JWT: { secret, options } } = require('../config');
 
 exports.sign = (user) => {
   const token = jwt.sign({
-    username: user.username,
-    password: user.password
+    userId: user._id,
+    username: user.username
   }, secret, options);
   return token;
 };

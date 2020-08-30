@@ -1,0 +1,391 @@
+[2020-08-29T17:34:53.591] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T17:34:58.631] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T17:35:03.362] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T17:35:08.410] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T17:35:13.422] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T17:35:23.661] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T17:35:38.685] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T17:36:14.455] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T17:36:19.490] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T17:36:44.622] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T17:36:59.678] [ERROR] application - TypeError: next is not a function
+    at initialize (/Users/Masai/myProject/koa-restapi/node_modules/passport/lib/middleware/initialize.js:53:5)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:12:20.279] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:12:20.307] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:12:25.320] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:12:25.348] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:12:30.180] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:12:35.211] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:12:40.223] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:12:50.374] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:12:50.445] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:13:05.395] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:13:05.500] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
+[2020-08-29T22:16:24.302] [ERROR] application - TypeError: Cannot read property 'token' of undefined
+    at module.exports (/Users/Masai/myProject/koa-restapi/src/middlewares/auth.js:10:26)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at etag (/Users/Masai/myProject/koa-restapi/node_modules/koa-etag/index.js:26:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at conditional (/Users/Masai/myProject/koa-restapi/node_modules/koa-conditional-get/index.js:19:12)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at cors (/Users/Masai/myProject/koa-restapi/node_modules/@koa/cors/index.js:56:38)
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa-log4/koa-logger.js:86:13
+    at next (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/src/middlewares/database.js:21:12
+    at dispatch (/Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/Masai/myProject/koa-restapi/node_modules/koa/node_modules/koa-compose/index.js:34:12
+    at Application.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:168:12)
+    at Server.handleRequest (/Users/Masai/myProject/koa-restapi/node_modules/koa/lib/application.js:150:19)
+    at Server.emit (events.js:314:20)
