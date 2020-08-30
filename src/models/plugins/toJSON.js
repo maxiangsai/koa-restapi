@@ -17,7 +17,7 @@ const toJSON = (schema) => {
 
       ret.id = ret._id.toString();
       delete ret._id;
-      delete ret.createdAt;
+      // delete ret.createdAt;
       delete ret.updatedAt;
       if (transform) {
         return transform(doc, ret, options);
