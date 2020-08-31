@@ -11,7 +11,7 @@ const eTag = require('koa-etag');
 const cors = require('@koa/cors');
 
 const passport = require('koa-passport');
-const { jwtStrategy } = require('./config/passport');
+const { jwtStrategy } = require('./lib/passport');
 
 const { db } = require('./middlewares');
 const { accessLogger, errorLogger } = require('./logger');

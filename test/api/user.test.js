@@ -50,16 +50,6 @@ describe('User Routes', () => {
 
       expect(body).toHaveProperty('message');
     });
-
-    test('when format of password is not correct --> return 400', async () => {
-      const { body } = await request
-        .post('/users/register')
-        .send({ ...newUser, password: '#@' })
-        .set('Content-Type', 'application/x-www-form-urlencoded')
-        .expect(httpStatus.SERVICE_UNAVAILABLE);
-
-      expect(body).toHaveProperty('message');
-    });
   });
 
   describe('POST /users/login', () => {

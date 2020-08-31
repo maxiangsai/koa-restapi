@@ -1,6 +1,6 @@
 'use strict';
 
-const { sign } = require('../../src/utils/token');
+const { sign } = require('../../src/lib/passport');
 const { userOne } = require('./user');
 
 const userOneToken = sign(userOne);

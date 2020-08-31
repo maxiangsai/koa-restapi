@@ -17,11 +17,11 @@ const UserSchema = new mongoose.Schema({
     type: String,
     trim: true,
     required: true,
-    validate(value) {
-      if (!value.match(/[a-zA-Z0-9]/)) {
-        throw new Error('Password必须为字母或数字');
-      }
-    },
+    // validate(value) {
+    //   if (!value.match(/[a-zA-Z0-9]/)) {
+    //     throw new Error('Password必须为字母或数字');
+    //   }
+    // },
     private: true
   },
   avatar: {

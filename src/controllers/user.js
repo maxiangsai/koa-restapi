@@ -1,7 +1,7 @@
 'use strict';
 
 const User = require('../models/user');
-const { sign } = require('../utils/token');
+const { sign } = require('../lib/passport');
 const httpStatus = require('http-status');
 
 exports.get = async ctx => {

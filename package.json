@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node app",
     "dev": "./node_modules/.bin/nodemon src/app.js",
-    "prd": "pm2 start cluster",
+    "prd": "pm2 start src/cluster",
     "test": "cross-env NODE_ENV=test jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage"
