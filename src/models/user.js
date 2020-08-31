@@ -34,8 +34,7 @@ const UserSchema = new mongoose.Schema({
     default: 'user'
   }
 }, {
-  timestamps: true,
-  versionKey: false
+  timestamps: true
 });
 
 UserSchema.statics = {

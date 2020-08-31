@@ -36,8 +36,7 @@ const PostSchema = new Schema({
     default: 0
   }
 }, {
-  timestamps: true,
-  versionKey: false
+  timestamps: true
 });
 
 PostSchema.statics = {

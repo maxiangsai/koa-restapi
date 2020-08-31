@@ -34,7 +34,8 @@ describe('User Routes', () => {
           id: expect.anything(),
           avatar: expect.any(String),
           role: newUser.role,
-          username: newUser.username
+          username: newUser.username,
+          createdAt: expect.any(String)
         }
       });
     });
@@ -46,6 +47,16 @@ describe('User Routes', () => {
         .send(newUser)
         .set('Content-Type', 'application/x-www-form-urlencoded')
         .expect(httpStatus.BAD_REQUEST);
+
+      expect(body).toHaveProperty('message');
+    });
+
+    test('when format of password is not correct --> return 400', async () => {
+      const { body } = await request
+        .post('/users/register')
+        .send({ ...newUser, password: '#@' })
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .expect(httpStatus.SERVICE_UNAVAILABLE);
 
       expect(body).toHaveProperty('message');
     });
@@ -101,13 +112,16 @@ describe('User Routes', () => {
           id: userOne._id.toHexString(),
           role: userOne.role,
           avatar: expect.any(String),
-          username: userOne.username
+          username: userOne.username,
+          createdAt: expect.any(String)
         }
       });
     });
 
     test('id is not exist --> return 404', async () => {
-      const { body } = await request.get(`/users/${userTwo._id}`).expect(httpStatus.NOT_FOUND);
+      const { body } = await request
+        .get(`/users/${userTwo._id}`)
+        .expect(httpStatus.NOT_FOUND);
       expect(body).toHaveProperty('message');
     });
   });

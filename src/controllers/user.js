@@ -15,7 +15,6 @@ exports.get = async ctx => {
     ctx.status = httpStatus.NOT_FOUND;
     ctx.body = {
       code: 0,
-      data: null,
       message: '该用户不存在'
     };
   }
@@ -39,15 +38,11 @@ exports.getList = async ctx => {
 exports.create = async (ctx) => {
   const { body } = ctx.request;
   const user = new User(body);
-  try {
-    const data = await user.save();
-    ctx.body = {
-      code: 1,
-      data
-    };
-  } catch (error) {
-    console.error(error);
-  }
+  const data = await user.save();
+  ctx.body = {
+    code: 1,
+    data
+  };
 };
 
 /**
@@ -60,7 +55,6 @@ exports.login = async (ctx) => {
     ctx.status = httpStatus.NOT_FOUND;
     ctx.body = {
       code: 0,
-      data: null,
       message: '该用户未注册'
     };
     return;
@@ -76,7 +70,6 @@ exports.login = async (ctx) => {
     ctx.status = error.status;
     ctx.body = {
       code: 0,
-      data: null,
       message: error.message
     };
   }

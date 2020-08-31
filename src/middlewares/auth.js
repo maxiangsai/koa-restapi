@@ -11,7 +11,6 @@ const auth = async (ctx, next) => {
         message: 'token失效'
       };
     } else {
-      console.log('user---', user);
       ctx.state.user = user;
       return next();
     }

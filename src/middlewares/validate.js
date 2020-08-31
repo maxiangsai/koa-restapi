@@ -8,7 +8,6 @@ const validate = (schema) => async (ctx, next) => {
   const req = ctx.request;
   const validSchema = pick(schema, ['params', 'query', 'body']);
   const object = pick(req, Object.keys(validSchema));
-  console.log(object);
   const { value, error } = Joi.compile(validSchema)
     .prefs({ errors: { label: 'key' } })
     .validate(object);

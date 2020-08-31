@@ -18,11 +18,8 @@ const { accessLogger, errorLogger } = require('./logger');
 const config = require('./config');
 const routes = require('./routes');
 
-if (!config.IS_TEST) {
-  app.use(logger());
-}
-
 app.use(db());
+app.use(logger());
 app.use(accessLogger());
 app.use(cors(config.CORS));
 app.use(conditional());
