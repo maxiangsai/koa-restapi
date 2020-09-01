@@ -26,10 +26,10 @@ const PostSchema = new Schema({
     required: true
   },
 
-  categories: {
+  categories: [{
     type: Schema.Types.ObjectId,
     ref: 'Category'
-  },
+  }],
 
   state: {
     type: Number,
