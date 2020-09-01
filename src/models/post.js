@@ -23,7 +23,7 @@ const PostSchema = new Schema({
 
   cover: {
     type: String,
-    default: 'http://img.ydman.cn/img_1.jpg'
+    required: true
   },
 
   categories: {

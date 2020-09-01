@@ -37,12 +37,20 @@ exports.getList = async ctx => {
 
 exports.create = async (ctx) => {
   const { body } = ctx.request;
-  const user = new User(body);
-  const data = await user.save();
-  ctx.body = {
-    code: 1,
-    data
-  };
+  try {
+    const user = new User(body);
+    const data = await user.save();
+    ctx.body = {
+      code: 1,
+      data
+    };
+  } catch (error) {
+    ctx.status = httpStatus.BAD_REQUEST;
+    ctx.body = {
+      code: 0,
+      message: error.message
+    };
+  }
 };
 
 /**

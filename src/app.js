@@ -32,7 +32,7 @@ passport.use(jwtStrategy);
 routes(app);
 
 // error-handling
-app.on('error', (err) => {
+app.on('error', (err, ctx) => {
   errorLogger.error(err);
 });
 

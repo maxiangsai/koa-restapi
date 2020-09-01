@@ -8,6 +8,7 @@ const createPost = {
     title: Joi.string().required(),
     content: Joi.string().required(),
     description: Joi.string().required(),
+    cover: Joi.string().required(),
     categories: Joi.array().items(Joi.required().custom(objectId)),
     state: Joi.number().integer().valid(0, 1)
   })
