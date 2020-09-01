@@ -34,8 +34,7 @@ describe('User Routes', () => {
           id: expect.anything(),
           avatar: expect.any(String),
           role: newUser.role,
-          username: newUser.username,
-          createdAt: expect.any(String)
+          username: newUser.username
         }
       });
     });
@@ -102,8 +101,7 @@ describe('User Routes', () => {
           id: userOne._id.toHexString(),
           role: userOne.role,
           avatar: expect.any(String),
-          username: userOne.username,
-          createdAt: expect.any(String)
+          username: userOne.username
         }
       });
     });

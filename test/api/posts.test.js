@@ -18,7 +18,8 @@ describe('Posts Routes', () => {
       newPost = {
         title: faker.lorem.words(),
         content: faker.lorem.paragraph(),
-        description: faker.lorem.words()
+        description: faker.lorem.words(),
+        cover: faker.image.imageUrl()
       };
     });
 
@@ -54,7 +55,7 @@ describe('Posts Routes', () => {
           id: expect.any(String),
           cover: expect.any(String),
           description: expect.any(String),
-          createdAt: expect.any(String)
+          categories: expect.any(Array)
         }
       });
     });
@@ -80,7 +81,7 @@ describe('Posts Routes', () => {
         cover: expect.any(String),
         state: postOne.state,
         description: expect.any(String),
-        createdAt: expect.any(String)
+        categories: expect.any(Array)
       });
     });
   });
@@ -101,7 +102,7 @@ describe('Posts Routes', () => {
           cover: expect.any(String),
           state: postOne.state,
           description: expect.any(String),
-          createdAt: expect.any(String)
+          categories: expect.any(Array)
         }
       });
     });
@@ -138,7 +139,7 @@ describe('Posts Routes', () => {
           state: postOne.state,
           cover: expect.any(String),
           description: expect.any(String),
-          createdAt: expect.any(String)
+          categories: expect.any(Array)
         }
       });
     });
@@ -205,7 +206,7 @@ describe('Posts Routes', () => {
         cover: expect.any(String),
         state: postOne.state,
         description: expect.any(String),
-        createdAt: expect.any(String)
+        categories: expect.any(Array)
       });
     });
   });

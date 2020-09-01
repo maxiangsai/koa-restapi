@@ -28,8 +28,7 @@ describe('Category Routes', () =>{
       });
       expect(body.data.list[0]).toEqual({
         id: categoryOne._id.toHexString(),
-        name: categoryOne.name,
-        createdAt: expect.anything()
+        name: categoryOne.name
       });
     });
   });
@@ -49,8 +48,7 @@ describe('Category Routes', () =>{
         code: 1,
         data: {
           id: expect.any(String),
-          name: newBody.name,
-          createdAt: expect.anything()
+          name: newBody.name
         }
       });
     });
@@ -115,8 +113,7 @@ describe('Category Routes', () =>{
         code: 1,
         data: {
           name: updateBody.name,
-          id: categoryOne._id.toHexString(),
-          createdAt: expect.anything()
+          id: categoryOne._id.toHexString()
         }
       });
     });
@@ -151,8 +148,7 @@ describe('Category Routes', () =>{
         code: 1,
         data: {
           name: categoryOne.name,
-          id: categoryOne._id.toHexString(),
-          createdAt: expect.anything()
+          id: categoryOne._id.toHexString()
         }
       });
     });
