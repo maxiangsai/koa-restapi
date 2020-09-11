@@ -1,5 +1,7 @@
 'use strict';
 
+require('dotenv-flow').config({ path: './.env' });
+
 const {
   DEPLOY_HOST,
   DEPLOY_PORT,
@@ -12,5 +14,5 @@ module.exports = {
   port: DEPLOY_PORT,
   username: DEPLOY_USERNAME,
   password: DEPLOY_PASSWORD,
-  commands: DEPLOY_COMMANDS
+  commands: DEPLOY_COMMANDS.split(',')
 };

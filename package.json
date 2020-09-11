@@ -38,6 +38,7 @@
     "faker": "^5.1.0",
     "jest": "^26.4.2",
     "mongodb-memory-server": "^6.6.7",
+    "mxs-deploy": "^1.0.1",
     "nodemon": "^1.19.1",
     "supertest": "^4.0.2"
   },
