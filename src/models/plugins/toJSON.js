@@ -1,7 +1,8 @@
 'use strict';
 
 /* eslint-disable */
-const toJSON = (schema) => {
+const toJSON = (schema, options) => {
+  
   let transform;
   if (schema.options.toJSON && schema.options.toJSON.transform) {
     transform = schema.options.toJSON.transform;
@@ -17,7 +18,7 @@ const toJSON = (schema) => {
 
       ret.id = ret._id.toString();
       delete ret._id;
-      delete ret.__v
+      delete ret.__v;
       delete ret.createdAt;
       delete ret.updatedAt;
       if (transform) {
