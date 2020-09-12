@@ -7,7 +7,6 @@ const httpStatus = require('http-status');
  * 创建文章
  */
 exports.create = async (ctx) => {
-  console.log('创建文章');
   const post = new Post(ctx.request.body);
   const data = await post.save();
   ctx.body = {
