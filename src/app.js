@@ -18,9 +18,12 @@ const { accessLogger, errorLogger } = require('./logger');
 const config = require('./config');
 const routes = require('./routes');
 
+if (config.NODE_ENV !== 'test') {
+  app.use(logger());
+  app.use(accessLogger());
+}
+
 app.use(db());
-app.use(logger());
-app.use(accessLogger());
 app.use(cors(config.CORS));
 app.use(conditional());
 app.use(eTag());
