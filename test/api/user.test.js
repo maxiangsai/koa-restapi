@@ -107,7 +107,9 @@ describe('User Routes', () => {
     });
 
     test('id is not exist --> return 404', async () => {
-      const { body } = await request.get(`/users/${userTwo._id}`).expect(httpStatus.NOT_FOUND);
+      const { body } = await request
+        .get(`/users/${userTwo._id}`)
+        .expect(httpStatus.NOT_FOUND);
       expect(body).toHaveProperty('message');
     });
   });

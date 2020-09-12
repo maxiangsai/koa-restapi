@@ -8,6 +8,8 @@ const postOne = {
   _id: mongoose.Types.ObjectId(),
   title: faker.lorem.words(),
   content: faker.lorem.paragraph(),
+  description: faker.lorem.words(),
+  cover: faker.image.imageUrl(),
   state: 1
 };
 
@@ -15,6 +17,8 @@ const postTwo = {
   _id: mongoose.Types.ObjectId(),
   title: faker.lorem.words(),
   content: faker.lorem.paragraph(),
+  description: faker.lorem.words(),
+  cover: faker.image.imageUrl(),
   state: 0
 };
 

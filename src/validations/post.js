@@ -8,6 +8,7 @@ const createPost = {
     title: Joi.string().required(),
     content: Joi.string().required(),
     description: Joi.string().required(),
+    cover: Joi.string().required(),
     categories: Joi.array().items(Joi.required().custom(objectId)),
     state: Joi.number().integer().valid(0, 1)
   })
@@ -33,6 +34,9 @@ const updatePost = {
   body: Joi.object().keys({
     title: Joi.string(),
     content: Joi.string(),
+    description: Joi.string(),
+    cover: Joi.string(),
+    categories: Joi.array().items(Joi.required().custom(objectId)),
     state: Joi.number().integer().valid(0, 1)
   })
     .min(1)

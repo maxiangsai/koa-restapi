@@ -17,7 +17,9 @@ describe('Posts Routes', () => {
     beforeEach(async () => {
       newPost = {
         title: faker.lorem.words(),
-        content: faker.lorem.paragraph()
+        content: faker.lorem.paragraph(),
+        description: faker.lorem.words(),
+        cover: faker.image.imageUrl()
       };
     });
 
@@ -51,7 +53,9 @@ describe('Posts Routes', () => {
           title: newPost.title,
           state: expect.any(Number),
           id: expect.any(String),
-          cover: expect.any(String)
+          cover: expect.any(String),
+          description: expect.any(String),
+          categories: expect.any(Array)
         }
       });
     });
@@ -75,7 +79,9 @@ describe('Posts Routes', () => {
         title: postOne.title,
         content: postOne.content,
         cover: expect.any(String),
-        state: postOne.state
+        state: postOne.state,
+        description: expect.any(String),
+        categories: expect.any(Array)
       });
     });
   });
@@ -94,7 +100,9 @@ describe('Posts Routes', () => {
           title: postOne.title,
           content: postOne.content,
           cover: expect.any(String),
-          state: postOne.state
+          state: postOne.state,
+          description: expect.any(String),
+          categories: expect.any(Array)
         }
       });
     });
@@ -129,7 +137,9 @@ describe('Posts Routes', () => {
           title: updateBody.title,
           content: updateBody.content,
           state: postOne.state,
-          cover: expect.any(String)
+          cover: expect.any(String),
+          description: expect.any(String),
+          categories: expect.any(Array)
         }
       });
     });
@@ -142,6 +152,22 @@ describe('Posts Routes', () => {
         .set('Authorization', `Bearer ${userOneToken}`)
         .send()
         .expect(httpStatus.BAD_REQUEST);
+
+      expect(body).toEqual({
+        code: 0,
+        message: expect.any(String)
+      });
+    });
+
+    test('when id is not exist --> return 404', async () => {
+      await insertPost([postOne]);
+      await insertUser([userOne]);
+      const updateBody = { title: faker.lorem.words(), content: faker.lorem.paragraph() };
+      const { body } = await request
+        .patch(`/posts/${postTwo._id}`)
+        .set('Authorization', `Bearer ${userOneToken}`)
+        .send(updateBody)
+        .expect(httpStatus.NOT_FOUND);
 
       expect(body).toEqual({
         code: 0,
@@ -178,7 +204,9 @@ describe('Posts Routes', () => {
         title: postOne.title,
         content: postOne.content,
         cover: expect.any(String),
-        state: postOne.state
+        state: postOne.state,
+        description: expect.any(String),
+        categories: expect.any(Array)
       });
     });
   });

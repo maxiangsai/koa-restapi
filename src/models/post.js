@@ -23,21 +23,20 @@ const PostSchema = new Schema({
 
   cover: {
     type: String,
-    default: 'http://img.ydman.cn/img_1.jpg'
+    required: true
   },
 
-  categories: {
+  categories: [{
     type: Schema.Types.ObjectId,
     ref: 'Category'
-  },
+  }],
 
   state: {
     type: Number,
     default: 0
   }
 }, {
-  timestamps: true,
-  versionKey: false
+  timestamps: true
 });
 
 PostSchema.statics = {

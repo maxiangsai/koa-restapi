@@ -11,18 +11,15 @@ const eTag = require('koa-etag');
 const cors = require('@koa/cors');
 
 const passport = require('koa-passport');
-const { jwtStrategy } = require('./config/passport');
+const { jwtStrategy } = require('./lib/passport');
 
 const { db } = require('./middlewares');
 const { accessLogger, errorLogger } = require('./logger');
 const config = require('./config');
 const routes = require('./routes');
 
-if (!config.IS_TEST) {
-  app.use(logger());
-}
-
 app.use(db());
+app.use(logger());
 app.use(accessLogger());
 app.use(cors(config.CORS));
 app.use(conditional());
@@ -35,7 +32,7 @@ passport.use(jwtStrategy);
 routes(app);
 
 // error-handling
-app.on('error', (err) => {
+app.on('error', (err, ctx) => {
   errorLogger.error(err);
 });
 

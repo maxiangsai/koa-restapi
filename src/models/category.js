@@ -11,8 +11,7 @@ const CategorySchema = new Schema({
     trim: true
   }
 }, {
-  timestamps: true,
-  versionKey: false
+  timestamps: true
 });
 
 CategorySchema.statics = {

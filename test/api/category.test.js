@@ -53,6 +53,22 @@ describe('Category Routes', () =>{
       });
     });
 
+    test('when category is exist --> return 400', async () =>{
+      await insertCategory([categoryOne]);
+      await insertUser([userOne]);
+      const { body } = await request
+        .post('/categories')
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .set('Authorization', `Bearer ${userOneToken}`)
+        .send({ name: categoryOne.name })
+        .expect(httpStatus.BAD_REQUEST);
+
+      expect(body).toEqual({
+        code: 0,
+        message: expect.any(String)
+      });
+    });
+
     test('when params is missing --> return 400', async () =>{
       await insertUser([userOne]);
       const { body } = await request
